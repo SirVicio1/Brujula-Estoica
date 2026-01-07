@@ -1,0 +1,54 @@
+body {
+  font-family: Georgia, serif;
+  background: #111;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.app {
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #1c1c1c;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+button {
+  background: #c9a44c;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e0b85a;
+}
+
+.hidden {
+  display: none;
+}
+
+#response h3 {
+  margin-top: 20px;
+  color: #c9a44c;
+}
