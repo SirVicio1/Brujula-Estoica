@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Guía de Stoa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🏛️ El Guía de Stoa</h1>
+  <p class="subtitle">Razón. Virtud. Control.</p>
+
+  <div id="step1">
+    <textarea id="problem" placeholder="Describe tu problema..."></textarea>
+    <button onclick="startAudit()">Reflexionar</button>
+  </div>
+
+  <div id="audit" class="hidden">
+    <h2>🧠 Auditoría de Conciencia</h2>
+
+    <label>1. ¿Qué parte depende de tu voluntad y qué parte es externa?</label>
+    <textarea id="q1"></textarea>
+
+    <label>2. ¿Qué juicio o etiqueta estás poniendo a este evento?</label>
+    <textarea id="q2"></textarea>
+
+    <label>3. Visto desde un año en el futuro, ¿qué importancia tendría?</label>
+    <textarea id="q3"></textarea>
+
+    <button onclick="generateStoicResponse()">Ver con Razón</button>
+  </div>
+
+  <div id="response" class="hidden"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
